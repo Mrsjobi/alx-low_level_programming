@@ -1,20 +1,28 @@
-#include <unistd.h>
-#include "main.h"
+#include<stdio.h>
 
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: is always 0
  */
+
 int main(void)
 {
-	char word[8] = "_putchar";
-	int i;
+	char message[] = "_putchar";
+	int count;
+	int maxlength = 80;
 
-	for (i = 0; i < 8, i++)
-		_putchar(word[i]);
-	_putchar('\n');
-
+	for (count = 0; count < maxlength; count++)
+	{
+		if (message[count] == '\0')
+		{
+			putchar('\n');
+			break;
+		}
+		else
+		{
+			putchar(message[count]);
+		}
+	}
 	return (0);
-
 }
