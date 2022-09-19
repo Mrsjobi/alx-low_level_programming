@@ -6,7 +6,7 @@
  * @b: an input integer pointer
  * Return: Nothing
  */
-void swap_int(in *a, int *b)
+void swap_int(int *a, int *b)
 {
 	int aux;
 
