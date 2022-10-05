@@ -6,7 +6,7 @@
  * space in memory, which contains a copy of the string given as a
  * parameter.
  * @str: An input pointer of the string to copy.
- * Return: Apointer to new string or NULL if it str is NULL
+ * Return: A pointer to new string or NULL if it str is NULL
  */
 char *_strdup(char *str)
 {
@@ -32,7 +32,8 @@ char *_strdup(char *str)
 	{
 		for (; i < len; i++)
 		{
-			new_str[i] = *str;													str++;
+			new_str[i] = *str;
+			str++;
 		}
 		new_str[i] = '\0';
 		return (start);
